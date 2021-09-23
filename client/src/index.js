@@ -10,11 +10,11 @@ const LayzApp = React.lazy(() => import('./app'));
 const app = (
   <React.StrictMode>
     <Provider store={store}>
-      <React.Suspense fallback={<h1>Loading ...</h1>}>
+      <React.Suspense fallback={<span>Loading ...</span>}>
         <LayzApp />
       </React.Suspense>
     </Provider>
-  </React.StrictMode>
+  </React.StrictMode >
 );
 ReactDOM.render(app, document.getElementById('root'));
 

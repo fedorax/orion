@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import PascalCase from 'common/string/PascalCase';
-import PROJECT_CONSTANT from 'constant/projectConstant';
+import PROJECT_CONSTANT from 'constant/ProjectConstant';
 
 const NonAuthLayout = (props) => {
   React.useEffect(() => {
