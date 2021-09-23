@@ -1,8 +1,8 @@
-import NonAuthLayout from 'layout/NonAuthLayout';
+import MainLayout from 'layout/MainLayout';
 import HomePage from 'page/HomePage';
 const homeRoute = {
   path: '/home',
-  layout: NonAuthLayout,
+  layout: MainLayout,
   component: HomePage,
 };
 export default homeRoute;

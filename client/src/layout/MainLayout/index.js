@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
 import PascalCase from 'common/string/PascalCase';
-import PROJECT_CONSTANT from 'constant/projectConstant';
+import PROJECT_CONSTANT from 'constant/ProjectConstant';
 
 // Other Layout related Component
-import Header from './Header';
-import Sidebar from './Sidebar';
-import MainContent from './MainContent';
-import Footer from './Footer';
+// import Sidebar from './Sidebar';
+import Header from 'component/header';
+import Main from 'component/main';
+// import Footer from './Footer';
 
 const DafaultLayout = (props) => {
   React.useEffect(() => {
@@ -23,9 +23,11 @@ const DafaultLayout = (props) => {
   return (
     <div id="layout-wrapper">
       <Header />
-      <Sidebar />
-      <MainContent content={props.children} />
-      <Footer />
+      {/* <Sidebar /> */}
+      <Main>
+        {props.children}
+      </Main>
+      {/* <Footer /> */}
     </div>
   );
 };

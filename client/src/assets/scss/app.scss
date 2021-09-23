@@ -1,7 +1,9 @@
 @import 'global/color';
+@import 'global/transition';
 @import 'global/variable';
 
 @import './node_modules/bootstrap/scss/bootstrap';
 
 @import 'component/reboot';
 @import 'component/main';
+@import 'component/hamburger';
