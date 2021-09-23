@@ -1,5 +1,5 @@
 import React from 'react';
-
+import 'assets/scss/app.scss';
 import AppRouter from 'router';
 
 const App = () => {
