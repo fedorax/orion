@@ -9,9 +9,10 @@ import PROJECT_CONSTANT from 'constant/ProjectConstant';
 // import Sidebar from './Sidebar';
 import Header from 'component/header';
 import Main from 'component/main';
+import SideBar from 'component/sidebar';
 // import Footer from './Footer';
 
-const DafaultLayout = (props) => {
+const MainLayout = (props) => {
   React.useEffect(() => {
     const currentpage = PascalCase.toPascalCase(
       props.location.pathname.slice(1),
@@ -22,6 +23,7 @@ const DafaultLayout = (props) => {
 
   return (
     <div id="layout-wrapper">
+      <SideBar />
       <Header />
       {/* <Sidebar /> */}
       <Main>
@@ -32,9 +34,9 @@ const DafaultLayout = (props) => {
   );
 };
 
-DafaultLayout.propTypes = {
+MainLayout.propTypes = {
   children: PropTypes.any,
   location: PropTypes.object,
 };
 
-export default withRouter(DafaultLayout);
+export default withRouter(MainLayout);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import MenuItem from './MenuItem';
 
 const MenuItemLink = (item, className) => {
   return (
@@ -23,7 +23,7 @@ const MenuItemLink = (item, className) => {
   );
 };
 
-MenuItem.propTypes = {
+MenuItemLink.propTypes = {
   item: PropTypes.object,
   classNames: PropTypes.string,
 };

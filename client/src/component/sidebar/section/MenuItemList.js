@@ -1,17 +1,19 @@
 import React from 'react';
-import MenuHeader from './MenuHEader';
+import classNames from 'classnames';
+import MenuHeader from './MenuHeader';
 import MenuItem from './MenuItem';
 import MenuItemWithChildren from './MenuItemWithChildren';
 
 const MenuItemList = () => {
+  const menuItemList = [];
   return (
-    <div className={classNames({ 'topbar-nav': isHorizontal })}>
+    <div className={classNames({ 'topbar-nav': false })}>
       {menuItemList && menuItemList.length ? (
         <ul className="metismenu side-nav" id="menu-bar">
           {menuItemList.map((item, i) => {
             return (
               <React.Fragment key={item.id}>
-                {item.header && !isHorizontal && (
+                {item.header && (
                   <MenuHeader key={i + '-el'} item={item.header} />
                 )}
 
