@@ -1,20 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 import MenuItemLink from './MenuItemLink';
+import classNames from 'classnames';
 
-const MenuItem = () => {
+const MenuItem = ({ item }) => {
+  const [activate, setActivate] = React.useState(false);
   return (
-    <li className={classNames('side-nav-item', className)}>
-      <MenuItemLink item={item} className={linkClassName} />
+    <li
+      className={classNames('sidebar-item', (activate) ? 'active' : '')}
+      onClick={() => {
+        setActivate(!activate);
+      }} >
+      <MenuItemLink item={item} />
     </li>
   );
 };
 
 MenuItem.propTypes = {
   item: PropTypes.any,
-  classNames: PropTypes.string,
-  linkClassName: PropTypes.string,
 };
 
 export default MenuItem;

@@ -10,6 +10,7 @@ import PROJECT_CONSTANT from 'constant/ProjectConstant';
 import Header from 'component/header';
 import Main from 'component/main';
 import SideBar from 'component/sidebar';
+import Wrapper from 'component/wrapper';
 // import Footer from './Footer';
 
 const MainLayout = (props) => {
@@ -22,15 +23,15 @@ const MainLayout = (props) => {
   }, [props.location.pathname]);
 
   return (
-    <div id="layout-wrapper">
+    <Wrapper>
       <SideBar />
-      <Header />
       {/* <Sidebar /> */}
       <Main>
+        <Header />
         {props.children}
       </Main>
       {/* <Footer /> */}
-    </div>
+    </Wrapper>
   );
 };
 

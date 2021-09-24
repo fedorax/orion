@@ -1,0 +1,26 @@
+
+.sidebar-brand {
+  font-weight: $sidebar-brand-font-weight;
+  font-size: $sidebar-brand-font-size;
+  padding: $sidebar-brand-padding-y $sidebar-brand-padding-x;
+  color: $sidebar-brand-color;
+  display: block;
+
+  &:hover {
+    text-decoration: none;
+    color: $sidebar-brand-color;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  svg,
+  .feather {
+    color: $sidebar-brand-icon-color;
+    height: 24px;
+    width: 24px;
+    margin-left: -0.15rem;
+    margin-right: 0.375rem;
+  }
+}

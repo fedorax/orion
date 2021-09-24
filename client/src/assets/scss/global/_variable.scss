@@ -8,7 +8,7 @@ $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
-$dark: #354052 !default;
+$dark:$gray-800 !default;
 
 $theme-colors: (
   'primary': $primary,
@@ -21,6 +21,70 @@ $theme-colors: (
   'light': $light,
   'dark': $dark,
 ) !default;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 600 !default;
+$font-size-lg: 1rem !default;
+$font-size-sm: .75rem !default;
+
+// Sidebar general
+$sidebar-width: 260px !default;
+$sidebar-transition: margin-left .35s ease-in-out, left .35s ease-in-out !default;
+$sidebar-background:$dark !default;
+$sidebar-border: 0 !default;
+
+// Sidebar brand
+$sidebar-brand-padding-y: 1.15rem !default;
+$sidebar-brand-padding-x: 1.7rem !default;
+$sidebar-brand-color: $gray-100 !default;
+$sidebar-brand-font-weight: $font-weight-bold !default;
+$sidebar-brand-font-size: 1.15rem !default;
+$sidebar-brand-icon-color: lighten($primary, 5%) !default;
+
+// Sidebar header
+$sidebar-header-padding: 1.125rem 1.7rem 0.375rem !default;
+$sidebar-header-color: $gray-500 !default;
+$sidebar-header-text-transform: none !default;
+$sidebar-header-font-size: $font-size-sm !default;
+
+// Sidebar link
+$sidebar-link-padding: .7rem 1.7rem !default;
+$sidebar-link-font-weight: 400 !default;
+$sidebar-link-color: rgba($white, 0.55) !default;
+$sidebar-link-bg: transparent !default;
+$sidebar-link-hover-color: rgba($white, 0.9) !default;
+$sidebar-link-hover-bg: transparent !default;
+$sidebar-link-hover-font-weight: $font-weight-normal !default;
+$sidebar-link-active-color: $sidebar-link-hover-color !default;
+$sidebar-link-active-bg: transparent !default;
+$sidebar-link-active-font-weight: $font-weight-normal !default;
+
+// Sidebar child link
+$sidebar-link-child-padding: .55rem 1.7rem .55rem 3.75rem !default;
+$sidebar-link-child-font-weight: 400 !default;
+$sidebar-link-child-color: rgba($white, 0.55) !default;
+$sidebar-link-child-bg: transparent !default;
+$sidebar-link-child-hover-color: rgba($white, 0.9) !default;
+$sidebar-link-child-hover-bg: transparent !default;
+$sidebar-link-child-active-color: $sidebar-link-child-hover-color !default;
+$sidebar-link-child-active-bg: transparent !default;
+
+// Sidebar child link nested
+$sidebar-link-child-second-padding: .55rem 1.5rem .55rem 4.3rem !default;
+$sidebar-link-child-third-padding: .55rem 1.5rem .55rem 5.05rem !default;
+
+// Sidebar link icon
+$sidebar-link-icon-color: $white !default;
+$sidebar-link-icon-hover-color: $white !default;
+$sidebar-link-icon-active-color: $white !default;
+
+// Sidebar bottom
+$sidebar-bottom-color: $gray-200 !default;
+$sidebar-bottom-bg: darken($sidebar-background, 2) !default;
+
+// Shadow
+$shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
 
 // hamburger
 $hamburger-width-top: 24px !default;

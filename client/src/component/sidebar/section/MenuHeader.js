@@ -1,16 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const MenuHeader = (item, key) => {
+const MenuHeader = ({ item }) => {
   return (
-    <li className="side-nav-title side-nav-item" key={key}>
+    <li className="sidebar-header" >
       {item}
     </li>
   );
 };
 MenuHeader.propTypes = {
-  item: PropTypes.any,
-  key: PropTypes.any,
+  item: PropTypes.string,
 };
 
 export default MenuHeader;

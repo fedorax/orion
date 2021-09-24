@@ -1,31 +1,28 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import { NavLink } from 'react-router-dom';
+import { Badge } from 'reactstrap';
 
-const MenuItemLink = (item, className) => {
+const MenuItemLink = ({ item, handleItemClick }) => {
   return (
-    <Link to={item.path}
-      className={
-        classNames(
-          'side-nav-link-ref',
-          'side-sub-nav-link',
-          className)
-      }>
+    <NavLink to="/home" // {item.path}
+      className="sidebar-link"
+      onClick={handleItemClick}
+      activeClassName="active">
       {item.icon && <i className={item.icon}></i>}
-      {item.badge &&
-        <span className={`badge badge-${item.badge.variant} float-right`}>
-          {item.badge.text}
-        </span>
-      }
       <span> {item.name} </span>
-    </Link>
+      {item.badge &&
+        <Badge color={item.badge.variant} size={18} className="sidebar-badge">
+          {item.badge.text}
+        </Badge>
+      }
+    </NavLink>
   );
 };
 
 MenuItemLink.propTypes = {
   item: PropTypes.object,
-  classNames: PropTypes.string,
+  handleItemClick: PropTypes.func,
 };
 
 export default MenuItemLink;

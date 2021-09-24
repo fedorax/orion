@@ -1,0 +1,899 @@
+[
+  {
+    "path": "/dashboard",
+    "name": "Dashboards",
+    "icon": "uil-home-alt",
+    "header": "Navigation",
+    "children": [
+      {
+        "path": "/dashboard/analytics",
+        "name": "Analytics",
+        "component": {
+          "_status": 1
+        },
+        "id": 2,
+        "parentId": 1,
+        "active": false
+      },
+      {
+        "path": "/dashboard/crm",
+        "name": "CRM",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 3,
+        "parentId": 1,
+        "active": false
+      },
+      {
+        "path": "/dashboard/ecommerce",
+        "name": "Ecommerce",
+        "badge": {
+          "variant": "success",
+          "text": "3"
+        },
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 4,
+        "parentId": 1,
+        "active": false
+      },
+      {
+        "path": "/dashboard/project",
+        "name": "Project",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 5,
+        "parentId": 1,
+        "active": false
+      }
+    ],
+    "id": 1,
+    "active": false
+  },
+  {
+    "path": "/apps/calendar",
+    "name": "Calendar",
+    "roles": [
+      "Admin"
+    ],
+    "icon": "uil-calender",
+    "component": {
+      "_status": -1,
+      "_result": null
+    },
+    "header": "Apps",
+    "id": 6,
+    "active": false
+  },
+  {
+    "path": "/apps/chat",
+    "name": "Chat",
+    "roles": [
+      "Admin"
+    ],
+    "icon": "uil-comments-alt",
+    "component": {
+      "_status": -1,
+      "_result": null
+    },
+    "id": 7,
+    "active": false
+  },
+  {
+    "path": "/apps/ecommerce",
+    "name": "eCommerce",
+    "roles": [
+      "Admin"
+    ],
+    "icon": "uil-store",
+    "children": [
+      {
+        "path": "/apps/ecommerce/products",
+        "name": "Products",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 9,
+        "parentId": 8,
+        "active": false
+      },
+      {
+        "path": "/apps/ecommerce/details",
+        "name": "Product Details",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 10,
+        "parentId": 8,
+        "active": false
+      },
+      {
+        "path": "/apps/ecommerce/orders",
+        "name": "Orders",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 11,
+        "parentId": 8,
+        "active": false
+      },
+      {
+        "path": "/apps/ecommerce/order/details",
+        "name": "Order Details",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 12,
+        "parentId": 8,
+        "active": false
+      },
+      {
+        "path": "/apps/ecommerce/customers",
+        "name": "Customers",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 13,
+        "parentId": 8,
+        "active": false
+      },
+      {
+        "path": "/apps/ecommerce/shopping-cart",
+        "name": "Shopping Cart",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 14,
+        "parentId": 8,
+        "active": false
+      },
+      {
+        "path": "/apps/ecommerce/checkout",
+        "name": "Checkout",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 15,
+        "parentId": 8,
+        "active": false
+      },
+      {
+        "path": "/apps/ecommerce/sellers",
+        "name": "Sellers",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 16,
+        "parentId": 8,
+        "active": false
+      }
+    ],
+    "id": 8,
+    "active": false
+  },
+  {
+    "path": "/apps/email",
+    "name": "Email",
+    "roles": [
+      "Admin"
+    ],
+    "icon": "uil-envelope",
+    "children": [
+      {
+        "path": "/apps/email/inbox",
+        "name": "Inbox",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 18,
+        "parentId": 17,
+        "active": false
+      },
+      {
+        "path": "/apps/email/details",
+        "name": "Email Details",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 19,
+        "parentId": 17,
+        "active": false
+      }
+    ],
+    "id": 17,
+    "active": false
+  },
+  {
+    "path": "/apps/projects",
+    "name": "Projects",
+    "roles": [
+      "Admin"
+    ],
+    "icon": "uil-briefcase",
+    "children": [
+      {
+        "path": "/apps/projects/list",
+        "name": "List",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 21,
+        "parentId": 20,
+        "active": false
+      },
+      {
+        "path": "/apps/projects/:id/details",
+        "name": "Detail",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 22,
+        "parentId": 20,
+        "active": false
+      },
+      {
+        "path": "/apps/projects/gantt",
+        "name": "Gantt",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 23,
+        "parentId": 20,
+        "active": false
+      },
+      {
+        "path": "/apps/projects/new",
+        "name": "Create Project",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 24,
+        "parentId": 20,
+        "active": false
+      }
+    ],
+    "id": 20,
+    "active": false
+  },
+  {
+    "path": "/apps/social",
+    "name": "Social Feed",
+    "roles": [
+      "Admin"
+    ],
+    "icon": "uil-rss",
+    "component": {
+      "_status": -1,
+      "_result": null
+    },
+    "id": 25,
+    "active": false
+  },
+  {
+    "path": "/apps/tasks",
+    "name": "Tasks",
+    "roles": [
+      "Admin"
+    ],
+    "icon": "uil-clipboard-alt",
+    "children": [
+      {
+        "path": "/apps/tasks/list",
+        "name": "Task List",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 27,
+        "parentId": 26,
+        "active": false
+      },
+      {
+        "path": "/apps/tasks/kanban",
+        "name": "Kanban",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 28,
+        "parentId": 26,
+        "active": false
+      }
+    ],
+    "id": 26,
+    "active": false
+  },
+  {
+    "path": "/pages",
+    "name": "Pages",
+    "icon": "uil-copy-alt",
+    "header": "Custom",
+    "children": [
+      {
+        "path": "/pages/starter",
+        "name": "Starter",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 30,
+        "parentId": 29,
+        "active": false
+      },
+      {
+        "path": "/pages/profile",
+        "name": "Profile",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 31,
+        "parentId": 29,
+        "active": false
+      },
+      {
+        "path": "/pages/invoice",
+        "name": "Invoice",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 32,
+        "parentId": 29,
+        "active": false
+      },
+      {
+        "path": "/pages/faq",
+        "name": "FAQ",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 33,
+        "parentId": 29,
+        "active": false
+      },
+      {
+        "path": "/pages/pricing",
+        "name": "Pricing",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 34,
+        "parentId": 29,
+        "active": false
+      },
+      {
+        "path": "/pages/error-404",
+        "name": "Error - 404",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 35,
+        "parentId": 29,
+        "active": false
+      },
+      {
+        "path": "/pages/error-500",
+        "name": "Error - 500",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 36,
+        "parentId": 29,
+        "active": false
+      },
+      {
+        "path": "/pages/timeline",
+        "name": "Timeline",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 37,
+        "parentId": 29,
+        "active": false
+      }
+    ],
+    "id": 29,
+    "active": false
+  },
+  {
+    "path": "/ui",
+    "name": "Components",
+    "icon": "uil-package",
+    "header": "UI Elements",
+    "children": [
+      {
+        "path": "/ui/base",
+        "name": "Base UI",
+        "children": [
+          {
+            "path": "/ui/accordions",
+            "name": "Accordions",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 40,
+            "parentId": 39,
+            "active": false
+          },
+          {
+            "path": "/ui/alerts",
+            "name": "Alerts",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 41,
+            "parentId": 39,
+            "active": false
+          },
+          {
+            "path": "/ui/badges",
+            "name": "Badges",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 42,
+            "parentId": 39,
+            "active": false
+          },
+          {
+            "path": "/ui/buttons",
+            "name": "Buttons",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 43,
+            "parentId": 39,
+            "active": false
+          },
+          {
+            "path": "/ui/cards",
+            "name": "Cards",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 44,
+            "parentId": 39,
+            "active": false
+          },
+          {
+            "path": "/ui/carousel",
+            "name": "Carousel",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 45,
+            "parentId": 39,
+            "active": false
+          },
+          {
+            "path": "/ui/dropdowns",
+            "name": "Dropdowns",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 46,
+            "parentId": 39,
+            "active": false
+          },
+          {
+            "path": "/ui/grid",
+            "name": "Grid",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 47,
+            "parentId": 39,
+            "active": false
+          },
+          {
+            "path": "/ui/listgroups",
+            "name": "List Groups",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 48,
+            "parentId": 39,
+            "active": false
+          },
+          {
+            "path": "/ui/modals",
+            "name": "Modals",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 49,
+            "parentId": 39,
+            "active": false
+          },
+          {
+            "path": "/ui/popovers",
+            "name": "Popovers",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 50,
+            "parentId": 39,
+            "active": false
+          },
+          {
+            "path": "/ui/progress",
+            "name": "Progress",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 51,
+            "parentId": 39,
+            "active": false
+          },
+          {
+            "path": "/ui/ribbons",
+            "name": "Ribbons",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 52,
+            "parentId": 39,
+            "active": false
+          },
+          {
+            "path": "/ui/spinners",
+            "name": "Spinners",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 53,
+            "parentId": 39,
+            "active": false
+          },
+          {
+            "path": "/ui/tabs",
+            "name": "Tabs",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 54,
+            "parentId": 39,
+            "active": false
+          },
+          {
+            "path": "/ui/toasts",
+            "name": "Toasts",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 55,
+            "parentId": 39,
+            "active": false
+          },
+          {
+            "path": "/ui/tooltips",
+            "name": "Tooltips",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 56,
+            "parentId": 39,
+            "active": false
+          },
+          {
+            "path": "/ui/typography",
+            "name": "Typography",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 57,
+            "parentId": 39,
+            "active": false
+          },
+          {
+            "path": "/ui/widgets",
+            "name": "Widgets",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 58,
+            "parentId": 39,
+            "active": false
+          }
+        ],
+        "id": 39,
+        "parentId": 38,
+        "active": false
+      },
+      {
+        "path": "/ui/extended",
+        "name": "Extended UI",
+        "children": [
+          {
+            "path": "/ui/dragdrop",
+            "name": "Drag and Drop",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 60,
+            "parentId": 59,
+            "active": false
+          },
+          {
+            "path": "/ui/rangesliders",
+            "name": "Range Sliders",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 61,
+            "parentId": 59,
+            "active": false
+          },
+          {
+            "path": "/ui/ratings",
+            "name": "Ratings",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 62,
+            "parentId": 59,
+            "active": false
+          }
+        ],
+        "id": 59,
+        "parentId": 38,
+        "active": false
+      },
+      {
+        "path": "/ui/icons",
+        "name": "Icons",
+        "children": [
+          {
+            "path": "/ui/icons/dripicons",
+            "name": "Dripicons",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 64,
+            "parentId": 63,
+            "active": false
+          },
+          {
+            "path": "/ui/icons/mdi",
+            "name": "Material Design",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 65,
+            "parentId": 63,
+            "active": false
+          },
+          {
+            "path": "/ui/icons/unicons",
+            "name": "Unicons",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "route": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 66,
+            "parentId": 63,
+            "active": false
+          }
+        ],
+        "id": 63,
+        "parentId": 38,
+        "active": false
+      },
+      {
+        "path": "/ui/forms",
+        "name": "Forms",
+        "children": [
+          {
+            "path": "/ui/forms/basic",
+            "name": "Basic Elements",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 68,
+            "parentId": 67,
+            "active": false
+          },
+          {
+            "path": "/ui/forms/advanced",
+            "name": "Form Advanced",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 69,
+            "parentId": 67,
+            "active": false
+          },
+          {
+            "path": "/ui/forms/validation",
+            "name": "Form Validation",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 70,
+            "parentId": 67,
+            "active": false
+          },
+          {
+            "path": "/ui/forms/wizard",
+            "name": "Form Wizard",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 71,
+            "parentId": 67,
+            "active": false
+          },
+          {
+            "path": "/ui/forms/upload",
+            "name": "File Upload",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 72,
+            "parentId": 67,
+            "active": false
+          },
+          {
+            "path": "/ui/forms/editors",
+            "name": "Editors",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 73,
+            "parentId": 67,
+            "active": false
+          }
+        ],
+        "id": 67,
+        "parentId": 38,
+        "active": false
+      },
+      {
+        "path": "/ui/charts",
+        "name": "Charts",
+        "children": [
+          {
+            "path": "/ui/charts/apex",
+            "name": "Apex",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 75,
+            "parentId": 74,
+            "active": false
+          },
+          {
+            "path": "/ui/charts/brite",
+            "name": "Brite",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 76,
+            "parentId": 74,
+            "active": false
+          },
+          {
+            "path": "/ui/charts/chartjs",
+            "name": "Chartjs",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 77,
+            "parentId": 74,
+            "active": false
+          }
+        ],
+        "id": 74,
+        "parentId": 38,
+        "active": false
+      },
+      {
+        "path": "/ui/tables",
+        "name": "Tables",
+        "children": [
+          {
+            "path": "/ui/tables/basic",
+            "name": "Basic",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 79,
+            "parentId": 78,
+            "active": false
+          },
+          {
+            "path": "/ui/tables/advanced",
+            "name": "Advanced",
+            "component": {
+              "_status": -1,
+              "_result": null
+            },
+            "id": 80,
+            "parentId": 78,
+            "active": false
+          }
+        ],
+        "id": 78,
+        "parentId": 38,
+        "active": false
+      },
+      {
+        "path": "/ui/googlemaps",
+        "name": "Google Maps",
+        "component": {
+          "_status": -1,
+          "_result": null
+        },
+        "id": 81,
+        "parentId": 38,
+        "active": false
+      }
+    ],
+    "id": 38,
+    "active": false
+  }
+]

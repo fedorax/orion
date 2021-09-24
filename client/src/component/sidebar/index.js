@@ -4,7 +4,7 @@ import Brand from './section/Brand';
 import MenuItemList from './section/MenuItemList';
 const SideBar = () => {
   return (
-    <nav className="sidebar left-side-menu" >
+    <nav className="sidebar" >
       <Brand />
 
       <SimpleBar

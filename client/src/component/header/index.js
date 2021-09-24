@@ -5,7 +5,7 @@ import SidebarToggleBtn from './section/SidebarToggleBtn';
 
 const Header = () => {
   return (
-    <Navbar color="white" light expand>
+    <Navbar className="header" color="white" light expand>
       <SidebarToggleBtn />
       <SearchNav />
 

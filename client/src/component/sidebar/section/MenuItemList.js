@@ -1,44 +1,33 @@
 import React from 'react';
-import classNames from 'classnames';
 import MenuHeader from './MenuHeader';
 import MenuItem from './MenuItem';
 import MenuItemWithChildren from './MenuItemWithChildren';
 
 const MenuItemList = () => {
-  const menuItemList = [];
+  const menuItemList = require('./menuItemData.json');
+
   return (
-    <div className={classNames({ 'topbar-nav': false })}>
-      {menuItemList && menuItemList.length ? (
-        <ul className="metismenu side-nav" id="menu-bar">
-          {menuItemList.map((item, i) => {
+
+    <ul className="sidebar-nav " id="sidebar-nav">
+      {
+        menuItemList ?
+          menuItemList.map((item, index) => {
             return (
-              <React.Fragment key={item.id}>
+              <React.Fragment key={index}>
                 {item.header && (
-                  <MenuHeader key={i + '-el'} item={item.header} />
+                  <MenuHeader item={item.header} />
                 )}
 
                 {item.children ? (
-                  <MenuItemWithChildren
-                    item={item}
-                    subMenuClassNames="side-nav-second-level"
-                    activatedMenuItemIds={activatedKeys}
-                    linkClassNames="side-nav-link"
-                  />
+                  <MenuItemWithChildren item={item} />
                 ) : (
-                  <MenuItem
-                    item={item}
-                    className={classNames({
-                      'mm-active': activatedKeys.indexOf(item.id) >= 0,
-                    })}
-                    linkClassName="side-nav-link"
-                  />
+                  <MenuItem item={item} />
                 )}
               </React.Fragment>
             );
-          })}
-        </ul>
-      ) : null}
-    </div>
+          }) : null
+      }
+    </ul >
   );
 };
 

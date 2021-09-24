@@ -1,73 +1,52 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import classNames from 'classnames';
 import MenuItem from './MenuItem';
+import { Collapse } from 'reactstrap';
+import classNames from 'classnames';
 
-const MenuItemWithChildren = ({
-  item,
-  linkClassNames,
-  subMenuClassNames,
-  activatedMenuItemIds,
-}) => {
+const MenuItemWithChildren = ({ item }) => {
+  const [open, setOpen] = React.useState(false);
+  const [activate, setActivate] = React.useState(false);
+  console.log(item);
   return (
     <li
-      className={classNames('side-nav-item', {
-        'mm-active': activatedMenuItemIds.indexOf(item.id) >= 0,
-        'active': activatedMenuItemIds.indexOf(item.id) >= 0,
-      })}>
-      <Link
-        to="#"
-        className={classNames('has-arrow', 'side-sub-nav-link', linkClassNames)}
-        aria-expanded={activatedMenuItemIds.indexOf(item.id) >= 0}>
+      className={
+        classNames('sidebar-item', (activate) ? 'active' : '')}>
+      <span
+        data-toggle="collapse"
+        className="sidebar-link"
+        onClick={() => {
+          setActivate(!activate);
+          setOpen(!open);
+        }}
+        aria-expanded={open ? 'true' : 'false'}
+      >
         {item.icon && <i className={item.icon}></i>}
+
+        <span> {item.name} </span>
         {item.badge && (
           <span className={`badge badge-${item.badge.variant} float-right`}>
             {item.badge.text}
           </span>
         )}
-        <span> {item.name} </span>
-      </Link>
-
-      <ul
-        className={classNames(subMenuClassNames, 'mm-collapse', {
-          'mm-collapsed mm-show': activatedMenuItemIds.indexOf(item.id) >= 0,
-        })}
-        aria-expanded={activatedMenuItemIds.indexOf(item.id) >= 0}>
-        {item.children.map((child, i) => {
-          return (
-            <React.Fragment key={i}>
-              {child.children ? (
-                <MenuItemWithChildren
-                  item={child}
-                  linkClassNames=""
-                  activatedMenuItemIds={activatedMenuItemIds}
-                  subMenuClassNames="side-nav-third-level"
-                />
-              ) : (
-                <MenuItem
-                  item={child}
-                  className={classNames(
-                    {
-                      'mm-active':
-                        activatedMenuItemIds.indexOf(child.id) >= 0,
-                    },
-                  )}
-                  linkClassName=""
-                />
-              )}
-            </React.Fragment>
-          );
-        })}
-      </ul>
-    </li>
+      </span>
+      <Collapse isOpen={open}>
+        <ul className="sidebar-dropdown list-unstyled"
+          aria-expanded='activate'>
+          {item.children.map((child, i) => {
+            return (
+              <React.Fragment key={i}>
+                <MenuItem item={child} />
+              </React.Fragment>
+            );
+          })}
+        </ul>
+      </Collapse>
+    </li >
 
   );
 };
 MenuItemWithChildren.propTypes = {
   item: PropTypes.object,
-  linkClassNames: PropTypes.string,
-  subMenuClassNames: PropTypes.string,
-  activatedMenuItemIds: PropTypes.any,
 };
 export default MenuItemWithChildren;
